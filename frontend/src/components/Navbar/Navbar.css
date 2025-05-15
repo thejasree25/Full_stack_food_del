@@ -1,0 +1,145 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 30px;
+    background-color: white;
+    position: relative;
+  }
+  .navbar-search-icon {
+  position: relative;
+  display: inline-block;
+}
+
+.navbar-search-icon img {
+  width: 24px;
+  height: 24px;
+}
+
+.dot {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  width: 10px;
+  height: 10px;
+  background-color: red;
+  border-radius: 50%;
+  border: 2px solid white;
+  animation: pulse 1.5s infinite;
+}
+  .logo {
+    width: 130px;
+  }
+  
+  .navbar-menu {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    font-size: 16px;
+  }
+  
+  .navbar-menu li {
+    cursor: pointer;
+  }
+  
+  .navbar-menu .active {
+    color: tomato;
+    font-weight: bold;
+  }
+  
+  .navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .navbar-right img {
+    width: 20px;
+    cursor: pointer;
+  }
+  
+  .navbar-right button {
+    padding: 8px 18px;
+    background-color: tomato;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Hamburger styles */
+  .hamburger {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+  }
+  .navbar-profile{
+    position: relative;
+  }
+  .nav-profile-dropdown{
+    position: absolute;
+    display: none;
+    right:0;
+    z-index: 1;
+  }
+  .navbar-profile:hover .nav-profile-dropdown{
+      display: flex;
+      flex-direction: column;
+      gap:10px;
+      background-color: #fff2ef;
+      border-radius: 4px;
+      border:1px solid tomato;
+      outline: 2px solid white;
+      list-style: none;
+      padding: 12px 25px;
+  }
+  .nav-profile-dropdown li{
+    display:flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+  }
+  .nav-profile-dropdown img{
+    width:20px;
+  }
+  .nav-profile-dropdown li:hover{
+    color: tomato;
+  }
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .hamburger {
+      display: block;
+    }
+  
+    .navbar-menu {
+      display: none;
+      position: absolute;
+      top: 70px;
+      left: 0;
+      right: 0;
+      background-color: white;
+      flex-direction: column;
+      gap: 15px;
+      padding: 15px 20px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      z-index: 10;
+    }
+  
+    .navbar-menu.open {
+      display: flex;
+    }
+  
+    .navbar-right {
+      gap: 10px;
+    }
+  
+    .navbar-right button {
+      padding: 6px 14px;
+      font-size: 14px;
+    }
+  
+    .logo {
+      width: 100px;
+    }
+  }
+  

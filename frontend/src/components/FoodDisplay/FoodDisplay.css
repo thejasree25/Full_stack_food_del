@@ -1,0 +1,62 @@
+.food-display{
+    margin-top: 30px;
+}
+.food-display h2{
+    font-size: max(2vw,24px);
+    font-weight: 600;
+}
+.food-display-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* ✅ exactly 4 columns */
+    margin-top: 30px;
+    gap: 30px;
+    row-gap: 50px;
+}
+* Large screens (≥1024px) - 4 cards per row */
+@media (min-width: 1024px) {
+  .food-display-list {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* Medium screens (768px–1023px) - 3 cards per row */
+@media (max-width: 1023px) {
+  .food-display {
+    padding: 30px 40px;
+  }
+
+  .food-display-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Small screens (481px–767px) - 2 cards per row */
+@media (max-width: 767px) {
+  .food-display {
+    padding: 20px 20px;
+  }
+
+  .food-display-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .food-display h2 {
+    font-size: 20px;
+  }
+}
+
+/* Extra small screens (≤480px) - 1 card per row */
+@media (max-width: 480px) {
+  .food-display {
+    padding: 15px 10px;
+  }
+
+  .food-display-list {
+    grid-template-columns: 1fr;
+  }
+
+  .food-display h2 {
+    font-size: 18px;
+    text-align: center;
+  }
+}
