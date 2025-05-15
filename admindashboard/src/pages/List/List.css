@@ -1,0 +1,48 @@
+.list {
+  width: 100%;
+  max-width: 1200px; /* Increased max width */
+  margin: auto;
+  padding: 20px;
+}
+
+.list-table {
+  width: 100%;
+  margin-top: 20px;
+  border-top: 1px solid #ccc;
+}
+
+.list-table-format {
+  display: grid;
+  grid-template-columns: 100px 1fr 1fr 1fr 80px; /* Adjusted column widths */
+  align-items: center;
+  gap: 10px;
+  padding: 15px 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.list-table-format img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.list-table-format.title {
+  font-weight: bold;
+  border-bottom: 2px solid #aaa;
+  background-color: #f5f5f5;
+}
+
+.delete-action {
+  color: red;
+  cursor: pointer;
+  font-weight: bold;
+  text-align: center;
+}
+
+.empty-list {
+  text-align: center;
+  color: #888;
+  margin-top: 20px;
+  font-style: italic;
+}

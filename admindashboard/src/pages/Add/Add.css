@@ -1,0 +1,116 @@
+.add {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.07);
+  max-width: 480px;
+  margin: 40px auto 0 auto;
+  padding: 36px 32px 28px 32px;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.add-img-upload {
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+.add-img-upload p {
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.add-img-upload label {
+  cursor: pointer;
+  display: block;
+  width: 90px;
+  height: 90px;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1.5px dashed #d3d3d3;
+  background: #fafafa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.add-img-upload img {
+  width: 100%;
+  height: 70%;
+  object-fit: cover;
+}
+
+.add-product-name,
+.add-product-description {
+  margin-bottom:20px;
+}
+
+.add-product-name p,
+.add-product-description p,
+.add-category p,
+.add-price p {
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+.add-product-name input,
+.add-product-description textarea,
+.add-category select,
+.add-price input {
+  padding: 10px 12px;
+  border: 1.2px solid #e0e0e0;
+  border-radius: 6px;
+  font-size: 15px;
+  background: #fafbfc;
+  transition: border-color 0.2s;
+}
+
+.add-product-name input:focus,
+.add-product-description textarea:focus,
+.add-category select:focus,
+.add-price input:focus {
+  border-color: #ff7043;
+  outline: none;
+}
+
+.add-product-description textarea {
+  resize: vertical;
+  min-height: 60px;
+  max-height: 150px;
+}
+
+.add-category-price {
+  display: flex;
+  gap: 18px;
+  margin-bottom: 18px;
+}
+
+.add-category,
+.add-price {
+  flex: 1;
+}
+
+.add-btn {
+  background: #ff7043;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 12px 0;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+  margin-top: 12px;
+}
+
+.add-btn:hover {
+  background: #f4511e;
+}

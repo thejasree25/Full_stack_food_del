@@ -1,0 +1,41 @@
+.navbar-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 8px 4%;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  position: relative;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: max(10%, 80px);
+}
+
+.profile {
+  width: 40px;
+  border-radius: 50%;
+}
+
+.hamburger {
+  display: none;
+  font-size: 26px;
+  cursor: pointer;
+  margin-top: 10px;
+  padding: 4px 10px;
+  align-self: flex-start;
+  background-color: tomato;
+  color: white;
+  border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+}
